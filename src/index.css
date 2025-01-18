@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .scrollbar-front::-webkit-scrollbar {
+        width: 15px;
+        height: 15px;
+    }
+    
+    .scrollbar-front::-webkit-scrollbar-track {
+        border-radius: 100vh;
+        background: #f7f4ed;
+    }
+    
+    .scrollbar-front::-webkit-scrollbar-thumb {
+        background: #247ae5;
+        border-radius: 100vh;
+        border: 3px solid #f6f7ed;
+    }
+    
+    .scrollbar-front::-webkit-scrollbar-thumb:hover {
+        background: #c0a0b9;
+    }
+
+    .scrollbar-back::-webkit-scrollbar {
+        width: 15px;
+        height: 15px;
+    }
+    
+    .scrollbar-back::-webkit-scrollbar-track {
+        border-radius: 100vh;
+        background: #f7f4ed;
+    }
+    
+    .scrollbar-back::-webkit-scrollbar-thumb {
+        background: #00C86F;
+        border-radius: 100vh;
+        border: 3px solid #f6f7ed;
+    }
+    
+    .scrollbar-back::-webkit-scrollbar-thumb:hover {
+        background: #c0a0b9;
+    }
+
+    .scrollbar-inno::-webkit-scrollbar {
+        width: 15px;
+        height: 15px;
+    }
+    
+    .scrollbar-inno::-webkit-scrollbar-track {
+        border-radius: 100vh;
+        background: #f7f4ed;
+    }
+    
+    .scrollbar-inno::-webkit-scrollbar-thumb {
+        background: #FFBA05;
+        border-radius: 100vh;
+        border: 3px solid #f6f7ed;
+    }
+    
+    .scrollbar-inno::-webkit-scrollbar-thumb:hover {
+        background: #c0a0b9;
+    }
+}
