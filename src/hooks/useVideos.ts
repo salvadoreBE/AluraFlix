@@ -79,6 +79,16 @@ export default function useVideos(baseUrl: string) {
     }
 
     const editVideo = async (id: string, video: VideoPut) => {
+
+        setFormModal(false);
+        console.log(videos);
+
+        if (video.isDefault) {
+            setVideos(videos.map((video) => video.id === id ? { ...video, ...editForm } : video));
+            toast.error('El vídeo sera editado visualmente, pero no del lado del servidor, ya que es un vídeo por defecto, los vídeos añadidos por el usuario si se editarán en el servidor');
+            return;
+        }
+
         try {
             const response = await fetch(`${baseUrl}/${id}`, {
                 method: 'PUT',
@@ -93,7 +103,6 @@ export default function useVideos(baseUrl: string) {
                 throw new Error(`Ha ocurrido un error al editar el video: ${response.status}`);
             }
 
-            setFormModal(false);
             getVideos();
             toast.success('Video editado correctamente');
         } catch (error) {

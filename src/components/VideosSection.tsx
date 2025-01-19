@@ -69,7 +69,7 @@ export default function VideosSection() {
               </div>
               <div className="space-y-8">
                 <TitleBadge slot="Back End" className="border-[#00C86F] text-[#00C86F]"/>
-                <div className="flex pb-8 flex-nowrap justify-start scrollbar-front overflow-x-auto shrink-0 md:shrink gap-x-11 lg:gap-x-20">
+                <div className="flex pb-8 flex-nowrap justify-start scrollbar-back overflow-x-auto shrink-0 md:shrink gap-x-11 lg:gap-x-20">
                   {videos.filter((video) => video.category === "backend")
                   .sort((a, b) => Number(b.id) - Number(a.id))
                   .map((video) => {
@@ -106,7 +106,7 @@ export default function VideosSection() {
               </div>
               <div className="space-y-8">
                 <TitleBadge slot="Innovación y Gestión" className="border-[#FFBA05] text-[#FFBA05]"/>
-                <div className="flex pb-8 flex-nowrap justify-start scrollbar-front overflow-x-auto shrink-0 md:shrink gap-x-11 lg:gap-x-20">
+                <div className="flex pb-8 flex-nowrap justify-start scrollbar-inno overflow-x-auto shrink-0 md:shrink gap-x-11 lg:gap-x-20">
                   {videos.filter((video) => video.category === "innovation")
                   .sort((a, b) => Number(b.id) - Number(a.id))
                   .map((video) => {
