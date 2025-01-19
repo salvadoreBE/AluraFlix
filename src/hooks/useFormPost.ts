@@ -44,7 +44,7 @@ export default function useFormPost() {
             
             setTimeout(() => {
                 Navigate('/');
-            }, 2000); // Redirigir después de 3 segundos
+            }, 2000); 
         } catch (error) {
             console.log(error);
         }

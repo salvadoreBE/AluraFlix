@@ -57,7 +57,7 @@ export default function useVideos(baseUrl: string) {
 
         if (isDefault) {
             setVideos(videos.filter((video) => video.id !== id));
-            toast.error('No se puede eliminar este video de la API porque es un video predeterminado. Por favor, intenta con un video creado por el usuario.');
+            toast.error('El vídeo sera eliminado visualmente, pero no se puede borrar del servidor al ser un vídeo por defecto, los vídeos añadidos por el usuario si se eliminarán del servidor');
             return;
         }
 
