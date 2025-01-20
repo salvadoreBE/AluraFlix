@@ -23,6 +23,7 @@ AluraFlix es una aplicación web desarrollada con **React** y **TailwindCSS**, q
 
 - [React](https://react.dev/) - Biblioteca para la construcción de interfaces de usuario.
 - [TailwindCSS](https://tailwindcss.com/) - Framework de estilos para diseño responsivo y moderno.
+- [TypeScript](https://www.typescriptlang.org/) - Lenguaje de programación tipado para mejorar la robustez del código.
 - API para la obtención de videos.
 
 ## Instalación y ejecución
