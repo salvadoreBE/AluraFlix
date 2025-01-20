@@ -32,7 +32,7 @@ Sigue estos pasos para ejecutar el proyecto localmente:
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/aluraflix.git
+   git clone https://github.com/salvadoreBE/AluraFlix
    ```
 
 2. Ingresa al directorio del proyecto:
