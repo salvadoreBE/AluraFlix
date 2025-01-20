@@ -1,50 +1,74 @@
-# React + TypeScript + Vite
+# AluraFlix
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AluraFlix es una aplicación web desarrollada con **React** y **TailwindCSS**, que permite a los usuarios explorar y administrar una colección de videos clasificados en diversas categorías.
 
-Currently, two official plugins are available:
+## Características principales
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Categorías de videos:** Los videos están organizados en tres categorías principales:
+  - Frontend
+  - Backend
+  - Innovation
+- **Gestíon de videos:**
+  - Puedes agregar nuevos videos proporcionando:
+    - Título
+    - URL del video (YouTube)
+    - Categoría
+    - Descripción
+  - Edición y eliminación:
+    - Los videos agregados por el usuario pueden ser editados y eliminados permanentemente.
+    - Los videos por defecto solo pueden modificarse de manera visual.
+- **Diseño responsivo y atractivo:** Compatible con todos los dispositivos para una experiencia de usuario óptima.
 
-## Expanding the ESLint configuration
+## Tecnologías utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [React](https://react.dev/) - Biblioteca para la construcción de interfaces de usuario.
+- [TailwindCSS](https://tailwindcss.com/) - Framework de estilos para diseño responsivo y moderno.
+- API para la obtención de videos.
 
-- Configure the top-level `parserOptions` property like this:
+## Instalación y ejecución
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Sigue estos pasos para ejecutar el proyecto localmente:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. Clona este repositorio:
+   ```bash
+   git clone https://github.com/tu-usuario/aluraflix.git
+   ```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+2. Ingresa al directorio del proyecto:
+   ```bash
+   cd aluraflix
+   ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+3. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+
+4. Inicia la aplicación:
+   ```bash
+   npm run dev
+   ```
+
+La aplicación estará disponible en `http://localhost:5173`.
+
+## Uso
+
+1. Explora los videos organizados por categoría.
+2. Agrega nuevos videos usando el formulario disponible.
+3. Edita o elimina videos agregados por ti.
+
+## Contribución
+
+Si deseas contribuir a AluraFlix, por favor sigue estos pasos:
+
+1. Haz un fork del repositorio.
+2. Crea una rama para tu función o corrección (`git checkout -b feature-nueva-funcionalidad`).
+3. Realiza tus cambios y haz un commit (`git commit -m 'Agrega nueva funcionalidad'`).
+4. Sube tu rama (`git push origin feature-nueva-funcionalidad`).
+5. Crea un Pull Request.
+
+## Licencia
+
+Este proyecto es de código abierto libre para su uso y desarrollado para el programa Oracle Next Education Alura Latam.
+
+
